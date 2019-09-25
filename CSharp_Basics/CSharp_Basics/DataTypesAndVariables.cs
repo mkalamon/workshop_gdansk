@@ -61,7 +61,6 @@ namespace CSharp_Basics
         {
             int X = 4;
             int Y = 5;
-            
 
             /*
              * There are few other ways you can do this
@@ -71,7 +70,7 @@ namespace CSharp_Basics
             int add = X + Y;
             int subtract = X - Y;
             int multiply = X * Y;
-            double divide = (double) Y / X;
+            double divide =  (double)Y/X;
 
             Assert.AreEqual(9, add, "Example Has wrong value did you changed it?");
             Assert.AreEqual(-1, subtract, "Wrong value maybe other way around?");
@@ -80,6 +79,7 @@ namespace CSharp_Basics
             Assert.That(multiply, Is.TypeOf<int>(), "You sure it is int?");
             Assert.AreEqual(1.25, divide, "Example Has wrong value did you changed it?");
             Assert.That(divide, Is.TypeOf<double>(), "You sure it is int?");
+        }
         }
 
         //        /// <summary>
