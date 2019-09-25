@@ -83,6 +83,7 @@ namespace CSharp_Basics
         {
             var theString =
                 "The interesting thing about London is that there are always stylish surprises around every corner.";
+            var theNumber = 123456;
 
             var result = theString.Substring(16, 5);
             Assert.AreEqual(result, "thing");
