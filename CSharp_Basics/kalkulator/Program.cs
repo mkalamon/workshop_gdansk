@@ -13,14 +13,8 @@ namespace kalkulator
         {
             while (!quit)
             {
-                MathData mathData = new MathData();
-                mathData.FirstNumber = UserInterface.GetValueFromUser("Podaj pierwszą liczbę");
-                mathData.SecondNumber = UserInterface.GetValueFromUser("Podaj drugą liczbę");
-                mathData.Operation = UserInterface.GetOperationFromUser("Podaj działanie");
-                var character = Calculations.Match(mathData);
-
-                double result = 0;
-
+                MathData mathData = UserInterface.GetAllValuesFromCustomer();
+                var result = Calculations.Match(mathData);
                 Console.WriteLine(result);
             }
 

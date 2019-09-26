@@ -8,6 +8,14 @@ namespace kalkulator
 {
     class UserInterface
     {
+        public static MathData GetAllValuesFromCustomer()
+        {
+            int first = GetValueFromUser("Podaj pierwszą liczbę");
+            int second = GetValueFromUser("Podaj drugą liczbę");
+            string operation = GetOperationFromUser("Podaj działanie");
+
+            return new MathData(first, second, operation);
+        }
         public static int GetValueFromUser(string message)
         {
             bool parsed = false;

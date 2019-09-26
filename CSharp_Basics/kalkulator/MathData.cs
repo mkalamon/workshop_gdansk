@@ -11,5 +11,14 @@ namespace kalkulator
         public int FirstNumber;
         public int SecondNumber;
         public string Operation;
+
+        public MathData(int firstNumber, int secondNumber, string operation)
+        {
+            FirstNumber = firstNumber;
+            SecondNumber = secondNumber;
+            Operation = operation;
+        }
     }
+
+
 }
