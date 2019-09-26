@@ -80,7 +80,6 @@ namespace CSharp_Basics
             Assert.That(divide, Is.TypeOf<double>(), "You sure it is int?");
         }
 
-
         /// <summary>
         /// There are more way of changing value if you want to only increase x you can
         /// x = x+5;
@@ -97,8 +96,10 @@ namespace CSharp_Basics
         {
             int example = 5;
             example += 10;
+
             //example is 15
             example++;
+
             //example is 16 know;
             example = example * 10;
             Assert.AreEqual(example, 160);
@@ -130,7 +131,7 @@ namespace CSharp_Basics
         /// </summary>
 
         [Test]
-        public void float_double_decimal()
+        public void Float_double_decimal()
         {
             decimal exampleDecimal = new decimal(10.5);
 
@@ -146,8 +147,6 @@ namespace CSharp_Basics
             decimal subtractD = (decimal)(x - y);
             decimal multiplyD = (decimal)(x * y);
             decimal divideD = (decimal)(y / x);
-
-
 
         }
 
